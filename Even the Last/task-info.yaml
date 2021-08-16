@@ -1,0 +1,26 @@
+type: checkiO
+files:
+- name: mission.py
+  visible: true
+  text: "def checkio(array: list) -> int:\n    \"\"\"\n        sums even-indexes elements\
+    \ and multiply at the last\n    \"\"\"\n    if len(array) == 0:\n        return\
+    \ 0\n    else:\n        result = sum(array[0::2])*array[-1]\n        return result\n\
+    \n#These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+    if __name__ == '__main__':\n    print('Example:')\n    print(checkio([0, 1, 2,\
+    \ 3, 4, 5]))\n    \n    assert checkio([0, 1, 2, 3, 4, 5]) == 30, \"(0+2+4)*5=30\"\
+    \n    assert checkio([1, 3, 5]) == 30, \"(1+5)*5=30\"\n    assert checkio([6])\
+    \ == 36, \"(6)*6=36\"\n    assert checkio([]) == 0, \"An empty array = 0\"\n \
+    \   print(\"Coding complete? Click 'Check' to review your tests and earn cool\
+    \ rewards!\")\n"
+  learner_created: false
+status: Solved
+code: "def checkio(array: list) -> int:\n    \"\"\"\n        sums even-indexes elements\
+  \ and multiply at the last\n    \"\"\"\n    if len(array) == 0:\n        return\
+  \ 0\n    else:\n        result = sum(array[0::2])*array[-1]\n        return result\n\
+  \n#These \"asserts\" using only for self-checking and not necessary for auto-testing\n\
+  if __name__ == '__main__':\n    print('Example:')\n    print(checkio([0, 1, 2, 3,\
+  \ 4, 5]))\n    \n    assert checkio([0, 1, 2, 3, 4, 5]) == 30, \"(0+2+4)*5=30\"\n\
+  \    assert checkio([1, 3, 5]) == 30, \"(1+5)*5=30\"\n    assert checkio([6]) ==\
+  \ 36, \"(6)*6=36\"\n    assert checkio([]) == 0, \"An empty array = 0\"\n    print(\"\
+  Coding complete? Click 'Check' to review your tests and earn cool rewards!\")\n"
+seconds_from_change: 129285

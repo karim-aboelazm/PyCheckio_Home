@@ -1,0 +1,58 @@
+<h2>Sun Angle</h2>
+<!-- Describe task in general -->
+<p>
+ Every true traveler must know how to do 3 things: fix the fire, find the water and extract useful information from the nature around him. Programming won't help you with the fire and water, but when it comes to the information extraction - it might be just the thing you need.
+</p>
+<p>
+ Your task is to find the angle of the sun above the horizon knowing the time of the day. Input data: the sun rises in the East at 6:00 AM, which corresponds to the angle of 0 degrees. At 12:00 PM the sun reaches its zenith, which means that the angle equals 90 degrees. 6:00 PM is the time of the sunset so the angle is 180 degrees. If the input will be the time of the night (before 6:00 AM or after 6:00 PM), your function should return - "I don't see the sun!".
+</p>
+<p style="text-align: center;">
+ <img alt="example" src="https://d17mnqrx9pmt3e.cloudfront.net/media/missions/media/70b4ef56a4f948218c1c218f08f77063/sun.png" style="max-height: 400px" title="Sun angle"/>
+</p>
+<!-- Explain input and output values -->
+<p>
+ <strong>
+  Input:
+ </strong>
+ The time of the day.
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ The angle of the sun, rounded to 2 decimal places.
+</p>
+<!-- Put some usage examples -->
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">sun_angle("07:00") == 15
+sun_angle("12:15") == 93.75
+sun_angle("01:23") == "I don't see the sun!"</pre>
+ 
+</div>
+<!-- Here you can explain how it can be used in development and what is usage of this. -->
+<!-- The section is optional -->
+<p class="for_info_only">
+ <strong>
+  How it is used:
+ </strong>
+ One day it can save your life, if you'll be lost far away from civilization.
+</p>
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+ <strong>
+  Precondition
+ </strong>
+ :
+ <br/>
+ 00:00 &lt;= time &lt;= 23:59
+</p>
+
+<p><a href="https://py.checkio.org/mission/sun-angle/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/sun-angle">See the task on CheckiO</a></p>

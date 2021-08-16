@@ -1,0 +1,64 @@
+<h2>Between Markers</h2>
+<p>
+ You are given a string and two markers (the initial and final). You have to find a substring enclosed between these two markers. But there are a few important conditions:
+</p>
+<ul>
+ <li>
+  The initial and final markers are always different.
+ </li>
+ <li>
+  If there is no initial marker, then the first character should be considered the beginning of a string.
+ </li>
+ <li>
+  If there is no final marker, then the last character should be considered the ending of a string.
+ </li>
+ <li>
+  If the initial and final markers are missing then simply return the whole string.
+ </li>
+ <li>
+  If the final marker comes before the initial marker, then return an empty string.
+ </li>
+</ul>
+<p>
+ <strong>
+  Input:
+ </strong>
+ Three arguments. All of them are strings. The second and third arguments are the initial and final markers.
+</p>
+<p>
+ <strong>
+  Output:
+ </strong>
+ A string.
+</p>
+<div class="for_info_only">
+ <p>
+  <strong>
+   Example:
+  </strong>
+ </p>
+ 
+ <pre class="brush: python">between_markers('What is &gt;apple&lt;', '&gt;', '&lt;') == 'apple'
+between_markers('No[/b] hi', '[b]', '[/b]') == 'No'
+</pre>
+ 
+</div>
+<p class="for_info_only">
+ <strong>
+  How it is used:
+ </strong>
+ <i>
+  for parsing texts
+ </i>
+</p>
+<p>
+ <strong>
+  Precondition:
+ </strong>
+ <i>
+  can't be more than one final marker and can't be more than one initial. Marker can't be an empty string
+ </i>
+</p>
+
+<p><a href="https://py.checkio.org/mission/between-markers/publications/category/clear">View solutions</a></p>
+<p><a href="https://py.checkio.org/en/mission/between-markers">See the task on CheckiO</a></p>
